@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse('All works!')
+    return render(request, 'news_app/index.html')
 
 
 def categories(request):
